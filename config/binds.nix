@@ -35,6 +35,7 @@
         desc = "Open diagnostic list";
       };
     }
+
     #TELESCOPE
     {
       mode = "n";

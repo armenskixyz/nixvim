@@ -10,6 +10,10 @@
     go_highlight_build_constraints = 0;
   };
 
+  diagnostic.settings = {
+    virtual_text = true;
+  };
+
   opts = {
     number = true;
     relativenumber = true;
@@ -37,6 +41,7 @@
     navic.enable = true;
     blink-indent.enable = true;
     none-ls.enable = true;
+    trouble.enable = true;
   };
 
   plugins.lsp = {
@@ -85,8 +90,8 @@
     settings = {
       bind = true;
       handler_opts.border = "rounded";
-      hint_enable = true;
-      floating_window = true;
+      hint_enable = false;
+      floating_window = false;
     };
   };
   plugins.blink-cmp.settings = {
