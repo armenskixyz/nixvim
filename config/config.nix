@@ -44,29 +44,6 @@
     trouble.enable = true;
   };
 
-  plugins.lsp = {
-    onAttach = ''
-      	if client.server_capabilities.documentSymbolProvider then
-      	  require("nvim-navic").attach(client, bufnr)
-      	end
-    '';
-
-    servers = {
-      nil_ls.enable = true;
-      pyright.enable = true;
-      clangd.enable = true;
-      gopls.enable = true;
-    };
-
-    keymaps.lspBuf = {
-      "K" = "hover";
-      "gD" = "declaration";
-      "gd" = "definition";
-      "gi" = "implementation";
-      "gt" = "type_definition";
-    };
-  };
-
   plugins.none-ls = {
 
     sources.formatting = {

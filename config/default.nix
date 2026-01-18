@@ -1,5 +1,6 @@
-{ pkgs, ... }: {
+{
   imports = [
+    ./plugin-configs/lsp.nix
     ./plugin-configs/startup.nix
     ./plugin-configs/treesitter.nix
     ./plugin-configs/avante.nix
