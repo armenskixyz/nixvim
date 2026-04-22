@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   globals.mapleader = " ";
 
   globals = {
@@ -42,13 +42,17 @@
     blink-indent.enable = true;
     none-ls.enable = true;
     trouble.enable = true;
+    todo-comments.enable = true;
   };
 
   plugins.none-ls = {
 
     sources.formatting = {
       gofmt.enable = true;
-      prettier.enable = true;
+      prettier = {
+        enable = true;
+        package = pkgs.prettier;
+      };
       stylua.enable = true;
       black.enable = true;
     };
