@@ -9,11 +9,12 @@
   outputs = { self, nixpkgs, nixvim, ...}:
   let
     system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true;};
+    
   
     myNeovim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
       inherit pkgs;
-      module = import ./config;
+      module = import ./config; 
     };
   in {
     packages.${system}.default = myNeovim;
