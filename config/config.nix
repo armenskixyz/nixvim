@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   globals.mapleader = " ";
 
   globals = {
@@ -23,7 +23,8 @@
     clipboard = "unnamedplus";
   };
 
-  colorschemes.catppuccin.enable = true;
+  # colorschemes.catppuccin.enable = true;
+  colorschemes.gruvbox.enable = true;
 
   plugins = {
     lsp.enable = true;
@@ -43,7 +44,8 @@
     none-ls.enable = true;
     trouble.enable = true;
     todo-comments.enable = true;
-  };
+    preview.enable = true;
+    };
 
   plugins.none-ls = {
 
