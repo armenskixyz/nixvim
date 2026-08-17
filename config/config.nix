@@ -21,6 +21,7 @@
     autoindent = true;
     smartindent = false;
     clipboard = "unnamedplus";
+    termguicolors = true;
   };
 
   # colorschemes.catppuccin.enable = true;
