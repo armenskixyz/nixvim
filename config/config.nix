@@ -24,7 +24,7 @@
     termguicolors = true;
   };
 
-  # colorschemes.catppuccin.enable = true;
+  colorschemes.catppuccin.enable = false;
   colorschemes.gruvbox.enable = true;
 
   plugins = {
