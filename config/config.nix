@@ -46,6 +46,7 @@
     trouble.enable = true;
     todo-comments.enable = true;
     preview.enable = true;
+    web-devicons.enable = true;
     };
 
   plugins.none-ls = {
